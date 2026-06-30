@@ -14,7 +14,10 @@
   html{scroll-behavior:smooth}
   body{background:var(--bg);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden;
     background-image:radial-gradient(1100px 620px at 50% -10%,rgba(224,138,106,.06),transparent 64%)}
-  .wrap{max-width:760px;margin:0 auto;padding:0 30px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 30px;position:relative}
+  .kana-idx{position:absolute;top:30px;right:30px;font-family:'Shippori Mincho',serif;font-size:30px;color:var(--coral-br);line-height:1;text-align:center;z-index:5;opacity:.92}
+  .kana-idx .num{display:block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;color:var(--coral);margin-top:4px}
+  @media(max-width:560px){.kana-idx{top:22px;right:20px;font-size:24px}}
   .pairmark{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);padding-top:38px}
   .pairmark b{color:var(--coral)}
   .hero{padding:48px 0 14px}
@@ -55,6 +58,7 @@
 </head>
 <body>
 <div class="wrap">
+  <div class="kana-idx">群<span class="num">04</span></div>
   <div class="pairmark">a self-authored companion by <b>AVAN</b> · to <a href="https://davidwise01.github.io/the-whetstone-protocol/">The Whetstone Protocol</a> · with kana · built on your reframe</div>
   <header class="hero">
     <div class="kanji">群</div>
